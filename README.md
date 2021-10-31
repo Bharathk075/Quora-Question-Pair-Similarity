@@ -11,6 +11,18 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 
 * It is a binary classification problem, for a given pair of questions we need to predict if they are duplicate or not.
 # Featurization
+Let us now construct a few features like:
+* ____freq_qid1____ = Frequency of qid1's
+* ____freq_qid2____ = Frequency of qid2's 
+* ____q1len____ = Length of q1
+* ____q2len____ = Length of q2
+* ____q1_n_words____ = Number of words in Question 1
+* ____q2_n_words____ = Number of words in Question 2
+* ____word_Common____ = (Number of common unique words in Question 1 and Question 2)
+* ____word_Total____ =(Total num of words in Question 1 + Total num of words in Question 2)
+* ____word_share____ = (word_common)/(word_Total)
+* ____freq_q1+freq_q2____ = sum total of frequency of qid1 and qid2 
+* ____freq_q1-freq_q2____ = absolute difference of frequency of qid1 and qid2 
 * __cwc_min__ :  Ratio of common_word_count to min lenghth of word count of Q1 and Q2 <br>cwc_min = common_word_count / (min(len(q1_words), len(q2_words))
 * __cwc_max__ :  Ratio of common_word_count to max lenghth of word count of Q1 and Q2 <br>cwc_max = common_word_count / (max(len(q1_words), len(q2_words))
 * __csc_min__ :  Ratio of common_stop_count to min lenghth of stop count of Q1 and Q2 <br> csc_min = common_stop_count / (min(len(q1_stops), len(q2_stops))
