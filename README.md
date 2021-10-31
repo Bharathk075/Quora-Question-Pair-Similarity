@@ -10,6 +10,7 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 * log-loss
 
 * It is a binary classification problem, for a given pair of questions we need to predict if they are duplicate or not.
+* We shall build the features using the techniques of Natural Language Processing and google word vectors
 # Featurization
 Let us now construct a few features like:
 * ____freq_qid1____ = Frequency of qid1's
