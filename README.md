@@ -6,3 +6,7 @@ Over 100 million people visit Quora every month, so it's no surprise that many p
 * Identify which questions asked on Quora are duplicates of questions that have already been asked. 
 * This could be useful to instantly provide answers to questions that have already been answered. 
 * We are tasked with predicting whether a pair of questions are duplicates or not. 
+
+-- It is a binary classification problem, for a given pair of questions we need to predict if they are duplicate or not.
+# Metrics 
+* log-loss
