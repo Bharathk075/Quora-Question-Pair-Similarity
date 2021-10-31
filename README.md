@@ -31,3 +31,18 @@ http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
 http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
 * __longest_substr_ratio__ :  Ratio of length longest common substring to min lenghth of token count of Q1 and Q2<br>longest_substr_ratio = len(longest common substring) / (min(len(q1_tokens), len(q2_tokens))
 * TF-IDF Average WORD-TO-VECTORS
+
+# ML Models Implemented:
+* Random Probability Model
+* Logistic Regression with Hyperparameter Tuning (Best alpha = 0.01)
+* Linear SVM with Hyperparameter Tuning (Best alpha = 1)
+* XG-Boost with Default parameters
+* XG-Boost with Hyperparameter Tuning (Best parameters:'n_estimators': 100, 'max_depth': 3)
+
+# Results
+Model	Parameters	Log - Loss
+Random Probability Model		0.849
+Logistic Regression	alpha = 0.01	0.466
+Linear SVM	alpha = 1	0.618
+XG-Boost		0.358
+XG-Boost	n_estimators': 100, 'max_depth': 3	0.3521
