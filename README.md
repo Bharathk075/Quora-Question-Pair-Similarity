@@ -40,9 +40,10 @@ http://chairnerd.seatgeek.com/fuzzywuzzy-fuzzy-string-matching-in-python/
 * XG-Boost with Hyperparameter Tuning (Best parameters:'n_estimators': 100, 'max_depth': 3)
 
 # Results
-Model	Parameters	Log - Loss
-Random Probability Model		0.849
-Logistic Regression	alpha = 0.01	0.466
-Linear SVM	alpha = 1	0.618
-XG-Boost		0.358
-XG-Boost	n_estimators': 100, 'max_depth': 3	0.3521
+| Model | Parameters | Log-loss |
+| --- | --- | --- |
+| Random Probability Model	|  | 0.849 |
+| Logistic Regression	| alpha = 0.01 | 0.466 |
+| Linear SVM	| alpha = 1 | 0.618 |
+| BG-Boost	| Default | 0.358 |
+| XG-Boost	| 'n_estimators': 100, 'max_depth': 3 | 0.3521 |
